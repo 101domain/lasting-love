@@ -85,7 +85,7 @@ nunc, eget mollis nulla malesuada quis.</p>'})|raw}}
 				<p>
 					{% if profile.phone %}T. {{ profile.phone }}<br />{% endif %}
 					{% if profile.email %}E. {{ profile.email }}<br />{% endif %}
-					{% if profile.address %}A. {{ profile.address1 }} {{ profile.address2 }} {{ profile.postalcode }}{% endif %}
+					{% if profile.address %}A. {{widget('companyaddress', 'featureaddress', {})|raw}}{% endif %}
 				</p>
 			</div>
 			<div class="small-12 medium-6 columns">
