@@ -20,8 +20,8 @@
 			  <div class="row">
 			  	<div class="small-12 columns text-center">
 			  		<div><span class="heading">{{ profile.address }}</span></div>
-			  		<div><span>{{ profile.address1 }}, {{ profile.address2 }} {{ profile.postalcode }}</span></div>
-			  		<div>{{widget('content', 'featuretime', {content:'28th February, 2017 at 3:30pm'})|raw}}</div>
+			  		<div><span>{{ profile.address1 }} {{ profile.address2 }} {{ profile.postalcode }}</span></div>
+			  		<div>{{widget('content', 'featuretime', {content:'day month, year time'})|raw}}</div>
 			  	</div>
 			  </div>
 			</section>
@@ -85,7 +85,6 @@ nunc, eget mollis nulla malesuada quis.</p>'})|raw}}
 				<p>
 					{% if profile.phone %}T. {{ profile.phone }}<br />{% endif %}
 					{% if profile.email %}E. {{ profile.email }}<br />{% endif %}
-					{% if profile.address %}A. {{widget('companyaddress', 'featureaddress', {})|raw}}{% endif %}
 				</p>
 			</div>
 			<div class="small-12 medium-6 columns">
