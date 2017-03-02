@@ -713,22 +713,21 @@ legend,
 	.strapline {
 		&:before,
 		&:after {
-			content: "";
-			position: absolute;
-			top: 0;
-			display: inline-block;
-			background-color: #fff;
-			width: 25px;
-			height: 100%; }
-		  &:before {
-			left: -24px;
-			-webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
-			clip-path: polygon(100% 0, 0 50%, 100% 100%); }
-		  &:after {
-			right: -24px;
-			-webkit-clip-path: polygon(0 0, 100% 50%, 0% 100%);
-			clip-path: polygon(0 0, 100% 50%, 0 100%); }
-	  } 
+		content: "";
+		position: absolute;
+		top: 0;
+		display: inline-block;
+		background-color: #fff;
+		width: 25px;
+		height: 100%; }
+	  &:before {
+		left: -24px;
+		-webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+		clip-path: polygon(100% 0, 0 50%, 100% 100%); }
+	  &:after {
+		right: -24px;
+		-webkit-clip-path: polygon(0 0, 100% 50%, 0% 100%);
+		clip-path: polygon(0 0, 100% 50%, 0 100%); }
 	}
 	.main-content .row { padding-left:2em; padding-right:2em; }
 	.feature__location .widget span { font-size:1.25em; }
